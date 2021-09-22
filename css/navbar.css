@@ -1,0 +1,151 @@
+.navbar{
+
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    background-color: #1b1b1b;
+    padding: 8px 0;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.navbar-genres, .navbar-categories, .navbar-platforms{
+    
+    list-style: none;
+    text-align: left;
+
+}
+
+.navbar-genres h2, .navbar-categories h2, .navbar-platforms h2{
+    
+    font-size: 14pt;
+    font-weight: 500;
+    padding: 0px 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+}
+.navbar-categories h2, .navbar-platforms h2{
+
+    margin-top: 30px;
+    
+}
+
+
+
+.navbar-link{
+
+    display: flex;
+    width: 100%;
+    padding: 2px 0px;
+  
+   
+  
+
+}
+
+.navbar-link a{
+
+   text-decoration: none;
+   width: 100%;
+   padding: 8px 20px;
+   color: #a7a8a8;
+   font-weight: 400;
+   font-size: 12pt;
+
+}
+.navbar-link a:hover{
+
+    background-color: #303030;
+}
+
+#responsive-nav{
+  
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    display: none;
+
+}
+.close{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 20px;
+    align-items: center;
+    justify-content:space-between;
+
+  
+}
+
+.close h2{
+    font-size: 15pt;
+    color: #fff;
+    display: flex;
+    align-items: center;
+ 
+}
+
+
+
+.user-options h2{
+    font-size: 15pt;
+    color: #fff;
+    width: 100%;
+    padding: 0px 20px;
+
+
+}
+#responsive-nav-icon{
+    
+    text-align: right;
+    color: #fff;
+    font-size: 24pt;
+    cursor: pointer;
+    padding: 6px;
+}
+
+#responsive-nav-icon:hover{
+
+    border-radius: 100%;
+    background-color: #303030
+}
+
+.user-options{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0px;
+    margin-bottom: 10px;
+    
+
+}
+.responsive-navbar-link{
+    width: 100%;
+}
+
+.responsive-navbar-link a{
+    width: 100%;
+    padding: 6px 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+.responsive-navbar-link a:hover{
+    background-color: #303030;
+}
+
+#responsive-nav-icon{
+    font-size: 20pt;
+    margin: 0;
+    margin-right: 4px;
+}

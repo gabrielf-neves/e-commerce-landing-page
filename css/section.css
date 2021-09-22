@@ -1,0 +1,354 @@
+/* Seção de destaques | showcase | carousel animado */
+.popular{
+    color: #ffffff;
+}
+.carousel-wrapper{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+}
+.carousel-items-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+ 
+}
+.carousel-items{
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+   
+    
+}
+
+.carousel-item{
+
+    width: 10px;
+    height: 10px;
+    background-color: #3a3a3a;
+    margin: 0px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+ 
+}
+
+#showcase-item-1{
+    background-color: #a7a8a8;
+}
+
+.arrow-back, .arrow-next{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.arrow-back{
+    left: 0;
+    
+}
+.arrow-next{
+    right: 0;
+}
+
+.arrow-back::-moz-selection { background: none; }
+::selection { background: none; }
+
+.arrow-next::-moz-selection { background: none; }
+::selection { background: none; }
+
+
+
+
+#carousel-icon{
+    font-size: 46pt;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px #000000a2;
+}
+
+.showcase-image{
+
+    width: 100%;
+    height: 100%;
+    position:absolute;
+
+}
+
+/* Seção de ofertas */
+
+.offers{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+  
+ 
+}
+
+.offer-see-more{
+    font-size:  10pt;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    border: solid 1px #ffffff;
+    padding: 6px 18px;
+}
+
+.offer-see-more:hover{
+    background-color: #ffffff;
+    color: #111111; 
+    transition: .2s;
+   
+}
+
+.offers-wrapper{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+
+}
+
+.offer-showcase{
+    width: 312px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+}
+
+.offer-showcase-image{
+    width: 100%;
+    height: 200px;
+
+}
+
+.offer-showcase-info{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+    background-color: #262626;
+    color: #ffffff;
+ 
+
+
+
+}
+
+.offer-showcase-info h2{
+
+    font-size: 12pt;
+    font-weight: 700;
+
+}
+
+.offer-showcase-info p{
+
+    font-size: 10pt;
+    font-weight: 300;
+
+}
+.offer-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.discount{
+    background-color: lightgreen;
+    color: #262626;
+    padding: 6px 8px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.discount p{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 12pt;
+  
+}
+.price{
+    height: 100%;
+}
+
+.price p{
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.price span{
+    text-decoration: line-through;
+    font-size: 9pt;
+    font-weight: 400;
+}
+
+.offer-options{
+    display: flex;
+    align-items: flex-end;
+   
+}
+
+#favorite-icon, #buy-icon{
+    font-size: 16pt;
+    margin: 0px 2px;
+    border-radius: 100%;
+    padding: 8px;
+    color: #ffffff;
+}
+
+#favorite-icon:hover, #buy-icon:hover{
+    background-color: #464646;
+}
+
+.offer-price-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.daily-offer{
+    color: lightgreen;
+}
+
+.offer-showcase:hover{
+    transform: scale(1.05);
+    transition: .2s;
+  
+}
+
+/* Seção de Lançamentos */
+
+.releases{
+    color: #ffffff;
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.releases-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.release-card{
+    width: 312px;
+    height: 100%;
+    cursor: pointer;
+
+
+}
+
+.release-img{
+    width: 100%;
+    height: 200px;
+}
+
+.release-card-info{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #262626;
+    color: #ffffff;
+    margin-top: -10px;
+    height: 80px;
+    justify-content: center;
+
+
+
+}
+
+.release-card-info p{
+
+    margin-right: 10px;
+    padding: 0px 16px;
+    height: 28px;
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 10pt;
+ 
+}
+
+.release-card:hover{
+
+    transform: scale(1.05);
+    transition: .2s;
+
+}
+
+.see-more-releases{
+    font-size:  10pt;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    border: solid 1px #ffffff;
+    padding: 6px 18px;
+}
+
+.see-more-releases:hover{
+    background-color: #ffffff;
+    color: #111111; 
+    transition: .2s;
+}
+
+.responsive-see-more-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -6px 0;
+    display:none;
+
+}
+
+
+
+
+

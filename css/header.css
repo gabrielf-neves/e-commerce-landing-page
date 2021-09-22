@@ -1,0 +1,279 @@
+header{
+    width: 100%;
+    background-color: #1b1b1b;
+    display: block;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+
+}
+
+.search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    width: 700px;
+    padding: 14px 24px;
+    border-radius: 26px;
+    margin-right: 40px;
+   
+ 
+  
+}
+
+
+.search-box:focus{
+    background-color: transparent;
+}
+.search-select{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #a7a8a8;;
+    font-size: 12pt;
+    cursor: pointer;
+    
+
+}
+#search-form{
+    text-align: center;
+    font-size: 12pt;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #ffffff;
+  
+    
+}
+
+#search-icon{
+    cursor: pointer;
+    font-size: 20pt;
+    display: block;
+    color: #a7a8a8;;
+   
+}
+
+.nav-list{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  
+    
+}
+
+.nav-link{
+    font-size: 12pt;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 8px;
+    cursor: pointer;
+
+}
+#nav-icon{
+    font-size: 20pt;
+    cursor: pointer;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24pt;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 100px;
+
+}
+
+.logo-subtitle{
+    color: #ffffff;;
+}
+
+#logo-controller{
+    font-size: 30pt;
+    margin-right:8px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: #ffd740;
+    color: #1b1b1b;
+
+}
+
+#cart{
+    background-color: #303030;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 100%;
+
+}
+
+#account{
+
+    background-color: #303030;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 24px;
+    cursor: pointer;
+
+}
+
+#account > #nav-icon{
+    margin-right: 8px;
+}
+
+#account:hover{
+
+    background-color: #3a3a3a;
+   
+}
+#cart:hover{
+
+    background-color: #3a3a3a;
+  
+}
+
+
+#hamburguer-menu #nav-icon{
+
+    font-size: 20pt;
+    color: #ffffff;
+    display: none;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: #303030;
+
+}
+
+#hamburguer-menu #nav-icon:hover{
+
+    background-color: #3a3a3a;
+  
+}
+
+@media screen and (max-width: 1355px){
+    #account{
+  
+        padding:0px;
+        margin-right: 0px;
+        background-color: transparent;
+  
+       
+    }
+    #account span{
+        display: none;
+
+    }
+
+    #account #nav-icon{
+
+        background-color: #303030;
+        color: #ffffff;
+        padding: 8px;
+        border-radius: 100%;
+
+    }
+
+    #account:hover{
+
+        background-color: transparent;
+       
+    }
+
+   #account #nav-icon:hover{
+
+        background-color: #3a3a3a;
+       
+    }
+
+    .nav{
+        justify-content: space-between;
+        padding: 20px 15px;
+    }
+  
+}
+
+@media screen and (max-width: 852px){
+    #search-form{
+        display: none;
+    }
+    .search-select{
+        display: none;
+    }
+    .search-box{
+        background-color: transparent;
+        padding: 0;
+
+    }
+    #search-icon{
+        cursor: pointer;
+        font-size: 22pt;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        background-color: #303030;
+        padding: 8px;
+        border-radius: 100%;
+        margin-left: 110%;
+        margin-right: 0px;
+       
+    }
+
+    #search-icon:hover{
+
+        background-color: #303030;
+        color: #ffffff;
+
+    }
+   
+    .logo{
+        margin: 0;
+    }
+
+}
+@media screen and (max-width: 585px){
+    .logo{
+        font-size: 18pt;
+
+    }
+
+    #cart{
+        display: none;
+    }
+    #account{
+        display: none;
+    }
+    #search-icon{
+        background-color: transparent;
+        margin-left: 120%;
+        color: #ffffff;
+        font-size: 18pt;
+  
+    }
+
+    #hamburguer-menu #nav-icon{
+
+        font-size: 18pt;
+        color: #ffffff;
+        background-color: transparent;
+    
+    }
+}

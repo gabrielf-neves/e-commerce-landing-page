@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Game e-commerce</title>
+</head>
+<body onload="showcaseItem(selectedShowcaseItem = 1)" id="master-wrapper">
+
+    <header class="header"> <!-- Menu / Cabeçalho  da página -->
+
+        <nav class="nav">
+            <p class="logo"> 
+            
+                <i class="material-icons-outlined" id="logo-controller"> sports_esports</i>
+
+                <span>
+                    Game<span class="logo-subtitle">Shop</span>
+                </span>
+            </p>
+            <div class="search-box">
+
+                <p class="search-select">
+                   
+                    Tudo
+                    <i class="material-icons"> arrow_drop_down </i>
+                </p>
+
+                <input type="text" name="search" id="search-form" placeholder="Procurar...">
+                <i class="material-icons" id="search-icon"> search </i>
+
+            </div>
+            <ul class="nav-list">
+
+                    <li class="nav-link" id="cart">
+                        <i class="material-icons-outlined" id="nav-icon">shopping_cart</i>
+                    </li>
+
+                    <li class="nav-link" id="account">
+
+                        <i class="material-icons-outlined" id="nav-icon">account_circle</i>
+                        <span>
+                            Iniciar Sessão
+                        </span>
+
+                    </li>
+
+                    <li class="nav-link" id="hamburguer-menu">
+
+                        <i class="material-icons-outlined" id="nav-icon" onclick="openNavbar()">menu</i>
+
+                    </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="main-section"> <!-- Corpo da página -->
+
+        <nav class="navbar" id="navbar"> <!-- Barra de navegação global (da esquerda)-->
+
+            <ul class="navbar-genres"> <!--Lista de gêneros -->
+
+                <h2>Navegar por gênero</h2>
+
+                <li class="navbar-link"><a href="#">Ação</a></li>
+                <li  class="navbar-link"><a href="#">Aventura</a></li>
+                <li  class="navbar-link"><a href="#">Casual</a></li>
+                <li  class="navbar-link"><a href="#">Corrida</a></li>
+                <li  class="navbar-link"><a href="#">Esportes</a></li>
+                <li  class="navbar-link"><a href="#">Estratégia</a></li>
+                <li  class="navbar-link"><a href="#">FPS</a></li>
+                <li  class="navbar-link"><a href="#">Indie</a></li>
+                <li  class="navbar-link"><a href="#">Multijogador Massivo</a></li>
+                <li  class="navbar-link"><a href="#">RPG</a></li>
+                <li  class="navbar-link"><a href="#">Simulação</a></li>
+                <li  class="navbar-link"><a href="#">Terror</a></li>
+
+            </ul>
+
+            <ul class="navbar-categories"> <!--Lista de categorias -->
+
+                <h2>Navegar por categoria</h2>
+                
+                <li class="navbar-link"><a href="#">Destaques</a></li>
+                <li class="navbar-link"><a href="#">Lançamentos</a></li>
+                <li class="navbar-link"><a href="#">Ofertas</a></li>
+                <li class="navbar-link"><a href="#">Acesso antecipado</a></li>
+                <li class="navbar-link"><a href="#">Multiplataforma</a></li>
+                <li class="navbar-link"><a href="#">Jogos completos</a></li>
+                <li class="navbar-link"><a href="#">Conteúdo adicional</a></li>
+
+            </ul>
+
+            <ul class="navbar-platforms"> <!--Lista de plataformas-->
+
+                <h2>Navegar por plataforma</h2>
+
+                <li class="navbar-link"><a href="#">PC</a></li>
+                <li class="navbar-link"><a href="#">Playstation 1</a></li>
+                <li class="navbar-link"><a href="#">Playstation 2</a></li>  
+                <li class="navbar-link"><a href="#">Playstation 3</a></li>
+                <li class="navbar-link"><a href="#">Playstation 4</a></li>
+                <li class="navbar-link"><a href="#">Playstation 5</a></li>
+                <li class="navbar-link"><a href="#">Xbox</a></li>
+                <li class="navbar-link"><a href="#">Xbox 360</a></li>
+                <li class="navbar-link"><a href="#">Xbox One</a></li>
+                <li class="navbar-link"><a href="#">Xbox Series X/S</a></li>
+
+            </ul>
+
+        </nav>
+
+        <section class="main"> <!-- Corpo principal da página -->
+
+            <h2 class="popular">DESTAQUES</h2> <!-- Seção de jogos em destaque -->
+
+            <div class="carousel-wrapper"> <!-- Slider/Showcase de jogos em destaque -->
+
+                <img src="../images/showcase-cyberpunk.jpg" alt="Cyberpunk 2077" title="Cyberpunk 2077" class="showcase-image"  id="showcase-image">
+                <div class="arrow-back" onclick="showcaseItem(selectedShowcaseItem -= 1)">  <i class="material-icons" id="carousel-icon"> navigate_before</i>  </div>
+                <div class="arrow-next" onclick="showcaseItem(selectedShowcaseItem += 1)"> <i class="material-icons" id="carousel-icon"> navigate_next</i> </div>
+            
+            </div>
+            <div class="carousel-items-wrapper">
+                <ul class="carousel-items">
+
+                    <li class="carousel-item" id="showcase-item-1" onclick="showcaseItem(selectedShowcaseItem = 1)"></li>
+                    <li class="carousel-item" id="showcase-item-2" onclick="showcaseItem(selectedShowcaseItem = 2)"></li>
+                    <li class="carousel-item" id="showcase-item-3" onclick="showcaseItem(selectedShowcaseItem = 3)"></li>
+                    <li class="carousel-item" id="showcase-item-4" onclick="showcaseItem(selectedShowcaseItem = 4)"></li>
+
+                </ul>
+                
+            </div>
+
+
+            <h2 class="offers">OFERTAS <a class="offer-see-more" href="#">VER TODAS AS OFERTAS</a> </h2> <!-- Seção de ofertas em destaque -->
+
+            <div class="offers-wrapper">
+                
+                <div class="offer-showcase" id="offer-showcase-1">
+
+                    <img src="../images/offer-showcase-red-dead-redemption-2.jpg" alt="Red Dead Redemption 2" class="offer-showcase-image">
+                    <div class="offer-showcase-info">
+                        <h2>PROMOÇÃO DE FIM DE SEMANA</h2>
+                        <p>Oferta válida até 26 março às 13h</p>
+                        <div class="offer-price-wrapper">
+                            <div class="offer-price">
+
+                                <div class="discount">
+                                   <p>- 50%</p>
+                                </div>
+                                <div class="price">
+                                    <span>R$99,99</span>
+                                    <p>R$49,99</p>
+                                </div>
+                    
+                            </div>
+                            <div class="offer-options">
+                                <i class="material-icons-outlined" id="favorite-icon" name="favorite" title="Adicionar à lista de desejos">favorite_border</i>
+                                <i class="material-icons-outlined" id="buy-icon" title="Adicionar ao carrinho">shopping_cart</i>
+                            </div>
+                        </div>
+                  
+                    </div>
+
+                </div>
+                <div class="offer-showcase" id="offer-showcase-2">
+
+                    <img src="../images/offer-showcase-the-last-of-us-2.jpg" alt="The Last of Us 2"class="offer-showcase-image">
+                    <div class="offer-showcase-info">
+                        <h2>PROMOÇÃO DE FIM DE SEMANA</h2>
+                        <p>Oferta válida até 26 março às 13h</p>
+                        <div class="offer-price-wrapper">
+                            <div class="offer-price">
+
+                                <div class="discount">
+                                   <p>- 50%</p>
+                                </div>
+                                <div class="price">
+                                    <span>R$179,99</span>
+                                    <p>R$89,99</p>
+                                </div>
+                    
+                            </div>
+                            <div class="offer-options">
+                                <i class="material-icons-outlined" id="favorite-icon" name="favorite" title="Adicionar à lista de desejos">favorite_border</i>
+                                <i class="material-icons-outlined" id="buy-icon" title="Adicionar ao carrinho">shopping_cart</i>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="offer-showcase" id="offer-showcase-3">
+
+                    <img src="../images/offer-showcase-the-witcher-3.jpg" alt="The Witcher 3"class="offer-showcase-image">
+                    <div class="offer-showcase-info">
+                        <h2>PROMOÇÃO DO DIA</h2>
+                        <p>Oferta válida até hoje às 23:59</p>
+                        <div class="offer-price-wrapper">
+                            <div class="offer-price">
+
+                                <div class="discount">
+                                   <p>- 80%</p>
+                                </div>
+                                <div class="price">
+                                    <span>R$69,99</span>
+                                    <p class="daily-offer">R$13,99</p>
+                                </div>
+                    
+                            </div>
+                            <div class="offer-options">
+                                <i class="material-icons-outlined" id="favorite-icon" title="Adicionar à lista de desejos">favorite_border</i>
+                                <i class="material-icons-outlined" id="buy-icon" title="Adicionar ao carrinho">shopping_cart</i>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <h2 class="releases">LANÇAMENTOS    <a href="#" class="see-more-releases">VER TODOS OS LANÇAMENTOS</a></h2>
+
+            <div class="releases-wrapper">
+
+                <div class="release-card">
+
+                    <img src="../images/showcase-cyberpunk.jpg" alt="Cyberpunk 2077" class="release-img">
+                    <div class="release-card-info">
+                        <p>Ação</p><p>FPS</p><p>RPG</p>
+                    </div>
+                    
+
+                
+                </div>
+                <div class="release-card">
+
+                    <img src="../images/showcase-demon-souls.jpg" alt="Demon's Souls" class="release-img">
+                    <div class="release-card-info">
+                        <p>Ação</p><p>Aventura</p><p>RPG</p>
+                    </div>
+                 
+                </div>
+                <div class="release-card">
+
+                    <img src="../images/release-showcase-the-medium.jpg" alt="The Medium" class="release-img">
+                    <div class="release-card-info">
+                        <p>Ação</p><p>Estratégia</p><p>Terror</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+           
+    
+        </section>
+   
+    </main>
+
+
+
+    <!-- Responsivo -->
+
+
+    <nav class="navbar" id="responsive-nav"> <!-- Barra de navegação global (responsiva)-->
+
+        <div class="close">
+            <h2>Sessão atual</h2>  <i class="material-icons-outlined" id="responsive-nav-icon" onclick="closeNavbar()">chevron_right</i>
+        </div>
+        <ul class="user-options">  
+     <!-- Ações de usuário (Pesquisa | Login) -->
+            <li class="responsive-navbar-link">
+                <a href="#"><i class="material-icons-outlined" id="responsive-nav-icon">account_circle</i>Iniciar sessão</a> 
+            </li>
+            <li class="responsive-navbar-link">
+                <a href="#"><i class="material-icons-outlined" id="responsive-nav-icon">shopping_cart</i>Carrinho</a> 
+            </li>
+        </ul>
+        <ul class="navbar-genres"> <!--Lista de gêneros -->
+
+            <h2>Navegar por gênero</h2>
+
+            <li class="navbar-link"><a href="#">Ação</a></li>
+            <li  class="navbar-link"><a href="#">Aventura</a></li>
+            <li  class="navbar-link"><a href="#">Casual</a></li>
+            <li  class="navbar-link"><a href="#">Corrida</a></li>
+            <li  class="navbar-link"><a href="#">Esportes</a></li>
+            <li  class="navbar-link"><a href="#">Estratégia</a></li>
+            <li  class="navbar-link"><a href="#">FPS</a></li>
+            <li  class="navbar-link"><a href="#">Indie</a></li>
+            <li  class="navbar-link"><a href="#">Multijogador Massivo</a></li>
+            <li  class="navbar-link"><a href="#">RPG</a></li>
+            <li  class="navbar-link"><a href="#">Simulação</a></li>
+            <li  class="navbar-link"><a href="#">Terror</a></li>
+
+        </ul>
+
+        <ul class="navbar-categories"> <!--Lista de categorias -->
+
+            <h2>Navegar por categoria</h2>
+            
+            <li class="navbar-link"><a href="#">Destaques</a></li>
+            <li class="navbar-link"><a href="#">Lançamentos</a></li>
+            <li class="navbar-link"><a href="#">Ofertas</a></li>
+            <li class="navbar-link"><a href="#">Acesso antecipado</a></li>
+            <li class="navbar-link"><a href="#">Multiplataforma</a></li>
+            <li class="navbar-link"><a href="#">Jogos completos</a></li>
+            <li class="navbar-link"><a href="#">Conteúdo adicional</a></li>
+
+        </ul>
+
+        <ul class="navbar-platforms"> <!--Lista de plataformas-->
+
+            <h2>Navegar por plataforma</h2>
+
+            <li class="navbar-link"><a href="#">PC</a></li>
+            <li class="navbar-link"><a href="#">Playstation 1</a></li>
+            <li class="navbar-link"><a href="#">Playstation 2</a></li>  
+            <li class="navbar-link"><a href="#">Playstation 3</a></li>
+            <li class="navbar-link"><a href="#">Playstation 4</a></li>
+            <li class="navbar-link"><a href="#">Playstation 5</a></li>
+            <li class="navbar-link"><a href="#">Xbox</a></li>
+            <li class="navbar-link"><a href="#">Xbox 360</a></li>
+            <li class="navbar-link"><a href="#">Xbox One</a></li>
+            <li class="navbar-link"><a href="#">Xbox Series X/S</a></li>
+
+        </ul>
+
+    </nav>
+
+    <script src="../js/carousel.js"></script>
+    <script src="../js/responsive-nav.js"></script>
+  
+
+    
+</body>
+</html>
