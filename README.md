@@ -17,8 +17,15 @@
 
 <h3>Mídia</h3>
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/90214509/134421472-53360c06-a512-4e18-b9de-5f923781b8a6.gif)
-<p>Funcionamento do Carousel</p>
+><p>Funcionamento do Carousel</p>
+>
+>![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/90214509/134421472-53360c06-a512-4e18-b9de-5f923781b8a6.gif)
 
-![captura-10](https://user-images.githubusercontent.com/90214509/134421929-da2fce80-78a4-470c-afbe-8618ff1599ac.png)
-<p>Responsivo - 1</p>
+<br />
+
+><p>Responsivo</p>
+>
+>![captura-10](https://user-images.githubusercontent.com/90214509/134421929-da2fce80-78a4-470c-afbe-8618ff1599ac.png)
+>![captura-11](https://user-images.githubusercontent.com/90214509/134422588-ae161be2-e30e-4dad-88f8-137fadcb40b7.png)
+
+
